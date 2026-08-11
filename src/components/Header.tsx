@@ -7,7 +7,18 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const pathname = usePathname();
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // State untuk buka/tutup menu di HP
+  
+  // State untuk mengontrol menu utama (Hamburger)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); 
+  
+  // State khusus untuk mengontrol dropdown submenu pendaftaran di mobile
+  const [isMobilePendaftaranOpen, setIsMobilePendaftaranOpen] = useState(false); 
+
+  // Fungsi pembantu agar saat menu diklik, semua menu tertutup rapi
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+    setIsMobilePendaftaranOpen(false); 
+  };
 
   return (
     <header className="sticky top-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/10">
@@ -24,16 +35,15 @@ export default function Header() {
               className="object-contain"
             />
             <Image 
-              src="/logo-insani.jpg" 
+              src="/logo-insani.png" 
               alt="Logo Insani" 
               width={32} 
               height={32} 
               className="object-contain rounded-sm" 
             />
           </div>
-          {/* Tulisan Rapimnas sekarang muncul di HP juga */}
           <div className="font-bold text-lg md:text-xl text-white tracking-tight">
-            RAPIMNAS <span className="text-red-400">2026</span>
+            RAPIMNAS FSLDK <span className="text-red-400">2026</span>
           </div>
         </Link>
         
@@ -43,7 +53,6 @@ export default function Header() {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle Menu"
         >
-          {/* Ikon SVG berubah menjadi (X) jika menu terbuka, dan (Garisan 3) jika tertutup */}
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isMobileMenuOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -53,7 +62,7 @@ export default function Header() {
           </svg>
         </button>
 
-        {/* Navigasi Kanan (Hanya terlihat di Laptop/Desktop) */}
+        {/* Navigasi Kanan (Hanya terlihat di Desktop) */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
           <Link href="/" className={`transition ${pathname === '/' ? 'text-white font-semibold' : 'hover:text-white'}`}>Beranda</Link>
           <Link href="/tentang" className={`transition ${pathname === '/tentang' ? 'text-white font-semibold' : 'hover:text-white'}`}>Tentang</Link>
@@ -69,52 +78,73 @@ export default function Header() {
             </div>
           </div>
         </nav>
-
       </div>
 
-      {/* Tampilan Menu Dropdown (Khusus Mobile) */}
-      {/* Akan muncul jika isMobileMenuOpen bernilai true */}
+      {/* Tampilan Menu Mobile Baru (Model Accordion sesuai gambar) */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-[#1a2340]/95 backdrop-blur-xl border-b border-white/10 py-4 px-4 flex flex-col gap-2 shadow-2xl">
+        <div className="md:hidden absolute top-full left-0 w-full bg-[#1a2340]/95 backdrop-blur-xl border-b border-white/10 py-4 px-4 flex flex-col gap-1.5 shadow-2xl">
+          
           <Link 
             href="/" 
-            onClick={() => setIsMobileMenuOpen(false)} // Menutup menu saat link diklik
-            className={`block px-4 py-3 rounded-lg transition ${pathname === '/' ? 'bg-white/10 text-white font-semibold' : 'text-slate-300 active:bg-white/5'}`}
+            onClick={closeMenu} 
+            className={`block px-4 py-3.5 rounded-xl transition uppercase text-sm tracking-wider ${pathname === '/' ? 'bg-white/10 text-white font-bold' : 'text-slate-300 font-semibold active:bg-white/5'}`}
           >
             Beranda
           </Link>
+          
           <Link 
             href="/tentang" 
-            onClick={() => setIsMobileMenuOpen(false)} 
-            className={`block px-4 py-3 rounded-lg transition ${pathname === '/tentang' ? 'bg-white/10 text-white font-semibold' : 'text-slate-300 active:bg-white/5'}`}
+            onClick={closeMenu} 
+            className={`block px-4 py-3.5 rounded-xl transition uppercase text-sm tracking-wider ${pathname === '/tentang' ? 'bg-white/10 text-white font-bold' : 'text-slate-300 font-semibold active:bg-white/5'}`}
           >
-            Tentang
-          </Link>
-          <Link 
-            href="/jadwal" 
-            onClick={() => setIsMobileMenuOpen(false)} 
-            className={`block px-4 py-3 rounded-lg transition ${pathname === '/jadwal' ? 'bg-white/10 text-white font-semibold' : 'text-slate-300 active:bg-white/5'}`}
-          >
-            Jadwal
+            Tentang Kami
           </Link>
           
-          <div className="border-t border-white/10 mt-2 pt-4 px-4">
-            <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider block mb-3">Pendaftaran</span>
-            <Link 
-              href="/pendaftaran/panitia" 
-              onClick={() => setIsMobileMenuOpen(false)} 
-              className={`block py-2 text-sm transition ${pathname === '/pendaftaran/panitia' ? 'text-red-400 font-semibold' : 'text-slate-300'}`}
+          <Link 
+            href="/jadwal" 
+            onClick={closeMenu} 
+            className={`block px-4 py-3.5 rounded-xl transition uppercase text-sm tracking-wider ${pathname === '/jadwal' ? 'bg-white/10 text-white font-bold' : 'text-slate-300 font-semibold active:bg-white/5'}`}
+          >
+            Jadwal Acara
+          </Link>
+          
+          {/* Wrapper Accordion untuk Pendaftaran */}
+          <div className="flex flex-col">
+            <button 
+              onClick={() => setIsMobilePendaftaranOpen(!isMobilePendaftaranOpen)}
+              className={`flex items-center justify-between px-4 py-3.5 rounded-xl transition uppercase text-sm tracking-wider w-full outline-none ${pathname.startsWith('/pendaftaran') && !isMobilePendaftaranOpen ? 'bg-white/5 text-white font-bold' : 'text-slate-300 font-semibold active:bg-white/5'}`}
             >
-              • Daftar Panitia
-            </Link>
-            <Link 
-              href="/pendaftaran/peserta" 
-              onClick={() => setIsMobileMenuOpen(false)} 
-              className={`block py-2 text-sm transition ${pathname === '/pendaftaran/peserta' ? 'text-red-400 font-semibold' : 'text-slate-300'}`}
-            >
-              • Daftar Peserta
-            </Link>
+              <span>Pendaftaran</span>
+              {/* Ikon panah yang akan berputar jika diklik */}
+              <svg 
+                className={`w-4 h-4 transition-transform duration-300 ${isMobilePendaftaranOpen ? 'rotate-180 text-white' : ''}`} 
+                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            {/* Submenu yang muncul saat panah diklik */}
+            {isMobilePendaftaranOpen && (
+              <div className="flex flex-col mt-2 ml-4 border-l-2 border-white/10 overflow-hidden animate-fade-in">
+                <Link 
+                  href="/pendaftaran/panitia" 
+                  onClick={closeMenu} 
+                  className={`block pl-6 pr-4 py-3 text-sm transition rounded-r-lg ${pathname === '/pendaftaran/panitia' ? 'text-red-400 font-bold bg-white/5' : 'text-slate-300 active:bg-white/5'}`}
+                >
+                  Oprec Panitia
+                </Link>
+                <Link 
+                  href="/pendaftaran/peserta" 
+                  onClick={closeMenu} 
+                  className={`block pl-6 pr-4 py-3 text-sm transition rounded-r-lg ${pathname === '/pendaftaran/peserta' ? 'text-red-400 font-bold bg-white/5' : 'text-slate-300 active:bg-white/5'}`}
+                >
+                  Pendaftaran Peserta
+                </Link>
+              </div>
+            )}
           </div>
+
         </div>
       )}
     </header>

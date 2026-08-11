@@ -11,7 +11,7 @@ export default function Home() {
 
         <div className="relative z-10">
           <span className="bg-red-950/50 border border-red-500/30 text-red-200 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6 inline-block">
-            RAPIMNAS
+            RAPIMNAS FSLDK 2026
           </span>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mt-4 leading-tight">
             Rapat Pimpinan Nasional 1 <br className="hidden md:inline" />
