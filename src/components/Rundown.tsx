@@ -1,5 +1,4 @@
 export default function Rundown() {
-  // Data jadwal bisa diedit di sini
   const schedule = [
     { time: "08:00 - 09:00", title: "Registrasi Peserta", desc: "Pendaftaran ulang dan pengambilan perlengkapan peserta." },
     { time: "09:00 - 10:30", title: "Pembukaan & Keynote Speech", desc: "Sambutan oleh Ketua Umum dan peresmian acara." },
@@ -11,24 +10,24 @@ export default function Rundown() {
   return (
     <section id="rundown" className="max-w-4xl mx-auto px-4 py-16">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-slate-900">Jadwal Acara</h2>
-        <p className="text-slate-600 mt-2">Rangkaian kegiatan utama selama Rapimnas berlangsung.</p>
+        <h2 className="text-3xl font-bold text-white">Jadwal Acara</h2>
+        <p className="text-slate-300 mt-2">Rangkaian kegiatan utama selama Rapimnas berlangsung.</p>
       </div>
       
       <div className="space-y-4">
         {schedule.map((item, index) => (
           <div 
             key={index} 
-            className="flex flex-col md:flex-row gap-4 md:gap-8 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow"
+            className="flex flex-col md:flex-row gap-4 md:gap-8 bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-all"
           >
             <div className="md:w-48 shrink-0">
-              <span className="text-blue-700 font-semibold bg-blue-50 px-4 py-2 rounded-lg inline-block">
+              <span className="text-red-300 font-semibold bg-red-950/50 border border-red-500/30 px-4 py-2 rounded-lg inline-block">
                 {item.time}
               </span>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-slate-800">{item.title}</h3>
-              <p className="text-slate-600 mt-1">{item.desc}</p>
+              <h3 className="text-lg font-bold text-white">{item.title}</h3>
+              <p className="text-slate-300 mt-1">{item.desc}</p>
             </div>
           </div>
         ))}
