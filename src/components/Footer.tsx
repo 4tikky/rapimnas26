@@ -36,7 +36,7 @@ export default function Footer() {
       
       {/* Copyright */}
       <div className="max-w-6xl mx-auto px-4 text-center mt-10 pt-6 border-t border-white/5 text-slate-500 text-xs">
-        &copy; 2026 Divisi Media & Informasi RAPIMNAS FSLDK. All rights reserved.
+        &copy; 2026 Divisi Multimedia RAPIMNAS FSLDK. All rights reserved.
       </div>
     </footer>
   );

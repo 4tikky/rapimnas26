@@ -77,6 +77,7 @@ export default function Header() {
               <Link href="/pendaftaran/peserta" className={`px-4 py-3 text-sm transition ${pathname === '/pendaftaran/peserta' ? 'bg-white/10 text-white' : 'text-slate-200 hover:bg-white/10'}`}>Pendaftaran Peserta</Link>
             </div>
           </div>
+          <Link href="/arsip" className={`transition ${pathname === '/arsip' ? 'text-white font-semibold' : 'hover:text-white'}`}>Arsip</Link>
         </nav>
       </div>
 
@@ -144,7 +145,13 @@ export default function Header() {
               </div>
             )}
           </div>
-
+          <Link 
+            href="/arsip" 
+            onClick={closeMenu} 
+            className={`block px-4 py-3.5 rounded-xl transition uppercase text-sm tracking-wider ${pathname === '/arsip' ? 'bg-white/10 text-white font-bold' : 'text-slate-300 font-semibold active:bg-white/5'}`}
+          >
+            Pusat Unduhan
+          </Link>
         </div>
       )}
     </header>
