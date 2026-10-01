@@ -1,3 +1,4 @@
+import BackToTop from "@/components/BackToTop";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className="scroll-smooth">
-      <body className={`${inter.className} bg-gradient-to-b from-[#5A0A10] to-[#121B35] min-h-screen text-slate-100 flex flex-col`}>
+      <body className="bg-[#3d0212] antialiased">       
         {/* Header otomatis ada di semua halaman */}
         <Header />
         
@@ -31,6 +32,8 @@ export default function RootLayout({
 
         {/* Footer otomatis ada di semua halaman */}
         <Footer />
+        {/* Tombol Back to Top */}
+        <BackToTop />
       </body>
     </html>
   );

@@ -1,86 +1,174 @@
 export default function TentangPage() {
+  // Data aktivitas (Rangkaian Kegiatan)
   const activities = [
-    "Sidang Nasional LDK Se-Indonesia",
-    "Kajian dan Seminar bersama Pembicara Nasional",
-    "Aksi Damai Palestina",
-    "Semarang Heritage Field Trip",
-    "Networking mahasiswa se-Indonesia"
+    "Sidang Rapimnas (Sidang Pendahuluan, Pleno, Komisi)",
+    "Seminar Kepemudaan",
+    "Pelatihan Manajemen LDK (PMLDK)",
+    "Live Podcast × UMF",
+    "Gerakan Subuh Jamaah Nasional (GSJN)",
+    "Menanam Pohon (Semai Asa)",
+    "Business Case Competition & Poster",
+    "Field Trip Semarang & Malam Keakraban"
+  ];
+
+  // Data Tujuan disesuaikan persis dengan dokumen referensi
+  const objectives = [
+    "Mempererat ukhuwah dan silaturahmi antarpimpinan serta anggota Lembaga Dakwah Kampus di tingkat nasional.",
+    "Memperkuat koordinasi, komunikasi, dan sinergi antar-LDK dalam menjalankan peran dakwah di lingkungan perguruan tinggi.",
+    "Menjadi wadah diskusi dan pertukaran gagasan mengenai tantangan serta peluang pengembangan dakwah kampus.",
+    "Menyusun rekomendasi dan arah gerak bersama yang sesuai dengan kebutuhan serta dinamika LDK di Indonesia.",
+    "Membangun jejaring kolaborasi yang berkelanjutan antarlembaga untuk memberikan kontribusi positif bagi kampus dan masyarakat.",
+  ];
+
+  // Data Misi
+  const misi = [
+    "Menguatkan konsolidasi nasional antar-Puskomda dan Lembaga Dakwah Kampus sebagai bagian dari upaya menyatukan arah gerak dakwah mahasiswa.",
+    "Membangun ruang kolaborasi dan pertukaran gagasan antar-elemen FSLDK Indonesia dalam merespons isu dan tantangan strategis umat dan bangsa.",
+    "Merumuskan arah gerak dan rekomendasi strategis yang relevan dengan kebutuhan dakwah mahasiswa di tingkat nasional maupun daerah.",
+    "Mendorong lahirnya inisiatif dan kontribusi nyata yang dapat diimplementasikan oleh Puskomda dan LDK pasca-Rapimnas.",
+    "Menumbuhkan semangat kepemimpinan dan kebermanfaatan bagi peserta agar mampu menjadi bagian dari gerakan mahasiswa yang memberikan dampak nyata di lingkungan masing-masing."
   ];
 
   return (
-    <div className="min-h-screen">
-      <div className="pt-10 pb-20">
-        <section className="max-w-4xl mx-auto px-4">
+    <div className="min-h-screen bg-[#7d0526]/10">
+      <div className="pt-10 pb-20 overflow-hidden">
+        <section className="max-w-6xl mx-auto px-4">
           
-          {/* Header Section */}
-          <div className="text-center mb-12">
-            <span className="bg-red-950/50 border border-red-500/30 text-red-200 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 inline-block">
-              All You Need To Know
+          {/* Header Section dengan Animasi Hover */}
+          <div className="text-center mb-16 relative group cursor-default">
+            {/* Glow di belakang teks judul */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#fe7002]/20 rounded-full blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
+            
+            <span className="bg-[#b70f3c]/40 border border-[#fe7002]/40 text-[#fce043] text-xs font-semibold px-5 py-2 rounded-full uppercase tracking-widest mb-6 inline-block shadow-[0_0_15px_rgba(254,112,2,0.3)] hover:-translate-y-1 transition-transform duration-300">
+              Tentang Acara
             </span>
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#ede5bf] mb-6 leading-tight transition-transform duration-700 hover:scale-105">
               RAPIMNAS 1 <br className="md:hidden" />
-              <span className="text-red-400">FSLDK INDONESIA</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fe7002] to-[#fce043]">FSLDK INDONESIA</span>
             </h1>
+            
+            {/* Tema & Tagline */}
+            <div className="bg-[#7d0526]/60 backdrop-blur-sm border border-[#b70f3c]/50 p-6 rounded-2xl max-w-3xl mx-auto shadow-2xl hover:shadow-[0_0_30px_rgba(254,112,2,0.15)] transition-shadow duration-500">
+              <h2 className="text-[#fe7002] text-sm font-bold uppercase tracking-widest mb-2">Tema Utama</h2>
+              <p className="text-[#ede5bf] text-xl md:text-2xl font-serif italic font-medium">
+                "Diponegoro's Spirit: Berdikarya dalam Gerak, Berdampak bagi Bangsa"
+              </p>
+            </div>
           </div>
 
           {/* Main Description Card */}
-          <div className="bg-[#1a2340]/60 backdrop-blur-md p-8 md:p-10 rounded-3xl border border-white/10 shadow-2xl mb-12 relative overflow-hidden">
-            {/* Dekorasi background tipis */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
+          <div className="bg-[#7d0526]/40 backdrop-blur-xl p-8 md:p-12 rounded-[2.5rem] border border-[#b70f3c]/40 shadow-2xl mb-16 relative overflow-hidden group hover:border-[#fe7002]/50 transition-colors duration-500">
+            {/* Dekorasi background tipis animasi putar */}
+            <div className="absolute -top-32 -right-32 w-80 h-80 bg-[#b70f3c]/20 rounded-full blur-3xl group-hover:rotate-180 transition-transform duration-[3000ms]"></div>
+            <div className="absolute -bottom-32 -left-32 w-80 h-80 bg-[#fe7002]/10 rounded-full blur-3xl group-hover:-rotate-180 transition-transform duration-[3000ms]"></div>
             
-            <p className="text-slate-200 leading-relaxed text-lg text-justify md:text-center relative z-10">
-              Forum ini merupakan rapat kerja dan konsolidasi tingkat nasional yang mempertemukan pengurus <span className="font-semibold text-white">Puskomnas (Pusat Komunikasi Nasional)</span>, <span className="font-semibold text-white">Puskomda (Pusat Komunikasi Daerah)</span>, serta perwakilan pimpinan <span className="font-semibold text-white">Lembaga Dakwah Kampus (LDK)</span> dari seluruh perguruan tinggi di Indonesia.
+            <p className="text-[#ede5bf]/90 leading-relaxed text-lg text-justify md:text-center relative z-10 font-medium">
+              Rapimnas × FSLDK 2026 merupakan forum nasional yang mempertemukan pimpinan dan perwakilan <span className="font-bold text-[#fe7002]">Lembaga Dakwah Kampus (LDK)</span> dari berbagai perguruan tinggi di Indonesia. Kegiatan ini menjadi ruang silaturahmi, konsolidasi, dan pertukaran gagasan dalam memperkuat peran serta sinergi LDK di tingkat nasional.
+              <br />
+              <br />
+              Melalui rangkaian agenda persidangan, diskusi, dan forum silaturahmi, Rapimnas × FSLDK 2026 diharapkan mampu menghasilkan gagasan, rekomendasi, serta arah gerak bersama yang relevan dengan dinamika dakwah kampus. Kegiatan ini juga menjadi momentum untuk memperluas jejaring, mempererat ukhuwah, dan membangun kolaborasi antarlembaga demi memberikan kontribusi positif bagi kehidupan kampus dan masyarakat.
             </p>
+          </div>
 
-            <div className="mt-10 pt-8 border-t border-white/10 relative z-10">
-              <h2 className="text-xl font-bold text-white mb-6 text-center">Forum ini menjadi ruang untuk:</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                
-                {/* Card 1: Ikon Diskusi/Grup */}
-                <div className="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-red-400/30 transition group">
-                  <div className="mb-4 text-red-400 group-hover:scale-110 group-hover:text-red-300 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+          {/* Visi & Misi Section */}
+          <div className="mb-20">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-[#ede5bf] relative inline-block">
+                Visi & Misi
+                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-16 h-1.5 bg-[#fe7002] rounded-full"></div>
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              {/* Card Visi */}
+              <div className="lg:col-span-5 bg-gradient-to-br from-[#b70f3c]/80 to-[#7d0526] border border-[#fe7002]/40 p-8 md:p-10 rounded-[2rem] shadow-[0_10px_30px_rgba(183,15,60,0.3)] hover:-translate-y-2 transition-transform duration-500 flex flex-col justify-center relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#fe7002]/20 blur-2xl rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-[#fe7002] rounded-2xl flex items-center justify-center text-[#7d0526] mb-6 shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8">
+                      <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
+                      <path fillRule="evenodd" d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <p className="text-slate-300 font-medium leading-relaxed">Bertemu, berdiskusi, berkoordinasi, dan bertukar gagasan.</p>
+                  <h3 className="text-2xl font-bold text-[#fce043] mb-4 uppercase tracking-wider">Visi</h3>
+                  <p className="text-[#ede5bf] text-lg leading-relaxed font-medium italic">
+                    “Mewujudkan Rapimnas 1 FSLDK Indonesia 2026 sebagai ruang konsolidasi dan kolaborasi untuk menguatkan arah gerak dakwah mahasiswa yang progresif dan berdampak bagi umat dan bangsa.”
+                  </p>
                 </div>
-                
-                {/* Card 2: Ikon Strategi/Roket */}
-                <div className="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-red-400/30 transition group">
-                  <div className="mb-4 text-red-400 group-hover:scale-110 group-hover:text-red-300 transition-all duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.45c.019-.104.039-.208.06-.311m-2.228 2.704a2.97 2.97 0 1 1-4.2-4.2l.685-.685m5.249 5.25l-.685.685" />
-                    </svg>
-                  </div>
-                  <p className="text-slate-300 font-medium leading-relaxed">Wadah untuk menyusun langkah strategis dakwah kampus nasional.</p>
-                </div>
+              </div>
 
+              {/* Card Misi */}
+              <div className="lg:col-span-7 bg-[#7d0526]/40 backdrop-blur-md border border-[#b70f3c]/50 p-8 md:p-10 rounded-[2rem] hover:border-[#fe7002]/40 transition-colors duration-500 shadow-xl">
+                <h3 className="text-2xl font-bold text-[#fce043] mb-6 flex items-center gap-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8 text-[#fe7002]">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                  MISI
+                </h3>
+                <div className="space-y-4">
+                  {misi.map((item, index) => (
+                    <div key={index} className="flex gap-4 p-3 rounded-xl hover:bg-[#b70f3c]/20 transition-colors duration-300 group/misi">
+                      <div className="w-8 h-8 shrink-0 flex items-center justify-center rounded-lg bg-[#b70f3c]/40 text-[#fe7002] font-bold group-hover/misi:bg-[#fe7002] group-hover/misi:text-[#7d0526] transition-colors">
+                        {index + 1}
+                      </div>
+                      <p className="text-[#ede5bf]/90 leading-relaxed text-sm md:text-base pt-1">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
 
-          {/* What's In Section */}
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-white relative inline-block">
-              What's in RAPIMNAS 1?
-              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-red-500 rounded-full"></div>
-            </h2>
-          </div>
-          
-          {/* List Kegiatan (Timeline Style) */}
-          <div className="max-w-2xl mx-auto space-y-4">
-            {activities.map((item, index) => (
-              <div 
-                key={index} 
-                className="flex items-center gap-6 bg-gradient-to-r from-[#1a2340] to-transparent p-5 rounded-2xl border border-white/5 hover:border-red-500/30 hover:bg-white/5 transition-all group"
-              >
-                <div className="w-10 h-10 shrink-0 flex items-center justify-center rounded-full bg-red-950/50 border border-red-500/30 text-red-400 font-bold group-hover:scale-110 transition-transform">
-                  {index + 1}
-                </div>
-                <span className="text-slate-200 text-lg font-medium">{item}</span>
+          {/* Tujuan & Rangkaian Kegiatan */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            
+            {/* Tujuan Section */}
+            <div>
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold text-[#ede5bf] relative inline-block">
+                  Tujuan Pelaksanaan
+                  <div className="absolute -bottom-3 left-0 w-16 h-1.5 bg-[#fe7002] rounded-full"></div>
+                </h2>
               </div>
-            ))}
+              <ul className="space-y-4">
+                {objectives.map((obj, index) => (
+                  <li key={index} className="flex items-start gap-4 p-4 rounded-2xl bg-gradient-to-r from-transparent to-transparent hover:from-[#b70f3c]/20 hover:to-transparent border border-transparent hover:border-[#b70f3c]/30 transition-all duration-300 group">
+                    <div className="mt-1 flex-shrink-0 text-[#fe7002] group-hover:scale-125 transition-transform duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                        <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm13.36-1.814a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <p className="text-[#ede5bf]/90 text-sm md:text-base leading-relaxed">{obj}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Rangkaian Kegiatan (Timeline Style) */}
+            <div>
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold text-[#ede5bf] relative inline-block">
+                  Rangkaian Kegiatan
+                  <div className="absolute -bottom-3 left-0 w-16 h-1.5 bg-[#fe7002] rounded-full"></div>
+                </h2>
+              </div>
+              <div className="space-y-3">
+                {activities.map((item, index) => (
+                  <div 
+                    key={index} 
+                    className="flex items-center gap-5 bg-gradient-to-r from-[#7d0526]/60 to-transparent p-4 rounded-2xl border border-[#b70f3c]/30 hover:border-[#fe7002]/50 hover:bg-[#b70f3c]/30 transition-all duration-300 group hover:translate-x-3 cursor-default"
+                  >
+                    <div className="w-10 h-10 shrink-0 flex items-center justify-center rounded-xl bg-[#b70f3c] border border-[#fe7002]/40 text-[#fce043] font-bold group-hover:bg-[#fe7002] group-hover:text-[#7d0526] transition-colors duration-300 shadow-md">
+                      {index + 1}
+                    </div>
+                    <span className="text-[#ede5bf] text-sm md:text-base font-medium group-hover:text-white transition-colors">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
           </div>
 
         </section>

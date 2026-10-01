@@ -1,1 +1,8 @@
 @import "tailwindcss";
+:root {
+    --merah: #b70f3c;
+    --maroon: #7d0526;
+    --krem: #ede5bf;
+    --oranye: #fe7002;
+    --kuning: #fce043;
+}
