@@ -7,7 +7,7 @@ export default function Rundown() {
   const scheduleData = [
     {
       day: "Hari Pertama",
-      date: "12 November 2026",
+      date: "Kamis, 12 November 2026",
       events: [
         { time: "Siang - Sore", title: "Kedatangan Peserta", desc: "Penyambutan akbar delegasi LDK dari seluruh Indonesia di Universitas Diponegoro." },
         { time: "Malam", title: "Malam Keakraban Peserta", desc: "Momen untuk melepas penat, mempererat ukhuwah, dan membangun kedekatan antardelegasi." }
@@ -15,31 +15,35 @@ export default function Rundown() {
     },
     {
       day: "Hari Kedua",
-      date: "13 November 2026",
+      date: "Jum'at, 13 November 2026",
       events: [
         { time: "Dini Hari", title: "Tahajud Berjamaah", desc: "Memulai hari dengan ibadah dan munajat bersama." },
-        { time: "Pagi", title: "Grand Opening RAPIMNAS", desc: "Pembukaan resmi rangkaian Rapimnas FSLDK Indonesia 2026." },
-        { time: "Siang", title: "Sidang Pendahuluan & Komisi", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
-        { time: "Sore", title: "Seminar Kepemudaan & Final Lomba", desc: "Ruang inspirasi generasi muda serta ajang Business Case Competition & Desain Poster." },
-        { time: "Malam", title: "Live Podcast: Palestine", desc: "Sesi diskusi inspiratif 'More Than What You See: Mengenal Palestina dari Sisi yang Jarang Kita Ceritakan'." }
+        { time: "08.00 - 11.30 | Gedung Prof. Soedarto Undip", title: "Grand Opening RAPIMNAS", desc: "Pembukaan resmi rangkaian Rapimnas FSLDK Indonesia 2026." },
+        { time: "Siang", title: "Sidang Pendahuluan", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
+        { time: "Siang", title: "Sidang Komisi", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
+        { time: "Sore", title: "Seminar Kepemudaan", desc: "Ruang inspirasi generasi muda serta ajang Business Case Competition & Desain Poster." },
+        { time: "Siang", title: "Final Lomba", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
+        { time: "Malam", title: "Grand Closing UMF x RAPIMNAS", desc: "Sesi diskusi inspiratif 'More Than What You See: Mengenal Palestina dari Sisi yang Jarang Kita Ceritakan'." }
       ]
     },
     {
       day: "Hari Ketiga",
-      date: "14 November 2026",
+      date: "Sabtu, 14 November 2026",
       events: [
         { time: "Pagi", title: "Sidang Komisi (Lanjutan)", desc: "Melanjutkan pembahasan agenda strategis nasional." },
-        { time: "Siang", title: "Tanam Pohon (Semai Asa)", desc: "Aksi nyata kepedulian terhadap lingkungan sebagai bentuk tanggung jawab ekologis." },
-        { time: "Sore", title: "Bedah GD Kaderisasi & Sensus Nasional", desc: "Pemaparan sistem kaderisasi dan sosialisasi program kerja nasional." },
-        { time: "Malam", title: "Pemilihan Tuan Rumah & Penutupan", desc: "Sidang penentuan tuan rumah agenda selanjutnya dan penutupan resmi persidangan." }
+        { time: "Siang", title: "Eco Movement", desc: "Aksi nyata kepedulian terhadap lingkungan sebagai bentuk tanggung jawab ekologis." },
+        { time: "Siang", title: "Sidang Pemilihan Tuan Rumah RAPIMNAS 2", desc: "Sidang pleno untuk menyatukan hasil pembahasan komisi dan merumuskan keputusan strategis." },
+        { time: "Sore", title: "PMLDK", desc: "Melanjutkan pembahasan agenda strategis nasional." },
+        { time: "Sore", title: "Bedah GD Kaderisasi & Sosialisasi Sensus Nasional", desc: "Pemaparan sistem kaderisasi dan sosialisasi program kerja nasional." },
+        { time: "Malam", title: "Penutupan", desc: "Sidang penentuan tuan rumah agenda selanjutnya dan penutupan resmi persidangan." }
       ]
     },
     {
       day: "Hari Keempat",
-      date: "15 November 2026",
+      date: "Minggu, 15 November 2026",
       events: [
         { time: "Subuh", title: "Gerakan Subuh Jamaah Nasional (GSJN)", desc: "Momentum spiritual menyatukan langkah dalam ibadah salat Subuh berjamaah serentak." },
-        { time: "Pagi - Siang", title: "Semarang Field Trip", desc: "Eksplorasi destinasi sejarah dan budaya di Kota Semarang sekaligus mempererat kebersamaan." }
+        { time: "Pagi - Siang", title: "Semarang Field Trip", desc: "Eksplorasi berbagai destinasi di Kota Semarang untuk mengenal kekayaan sejarah, budaya, dan suasana kota sekaligus mempererat kebersamaan antardelgasi." }
       ]
     }
   ];

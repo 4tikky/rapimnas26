@@ -35,22 +35,20 @@ export default function TentangPage() {
         <section className="max-w-6xl mx-auto px-4">
           
           {/* Header Section dengan Animasi Hover */}
-          <div className="text-center mb-16 relative group cursor-default">
-            {/* Glow di belakang teks judul */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#fe7002]/20 rounded-full blur-[80px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
+          <div className="max-w-4xl mx-auto px-4 text-center mb-16 relative">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-[#fe7002]/20 rounded-full blur-[80px] pointer-events-none"></div>
             
-            <span className="bg-[#b70f3c]/40 border border-[#fe7002]/40 text-[#fce043] text-xs font-semibold px-5 py-2 rounded-full uppercase tracking-widest mb-6 inline-block shadow-[0_0_15px_rgba(254,112,2,0.3)] hover:-translate-y-1 transition-transform duration-300">
+            <span className="relative z-10 bg-[#b70f3c]/40 border border-[#fe7002]/40 text-[#fce043] text-xs font-semibold px-5 py-2 rounded-full uppercase tracking-widest mb-6 inline-block shadow-[0_0_15px_rgba(254,112,2,0.3)]">
               Tentang Acara
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#ede5bf] mb-6 leading-tight transition-transform duration-700 hover:scale-105">
-              RAPIMNAS 1 <br className="md:hidden" />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fe7002] to-[#fce043]">FSLDK INDONESIA</span>
+            <h1 className="relative z-10 text-4xl md:text-5xl font-extrabold text-[#ede5bf] mb-4">
+              Rapimnas 1 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fe7002] to-[#fce043]">FSLDK 2026</span>
             </h1>
             
             {/* Tema & Tagline */}
             <div className="bg-[#7d0526]/60 backdrop-blur-sm border border-[#b70f3c]/50 p-6 rounded-2xl max-w-3xl mx-auto shadow-2xl hover:shadow-[0_0_30px_rgba(254,112,2,0.15)] transition-shadow duration-500">
               <h2 className="text-[#fe7002] text-sm font-bold uppercase tracking-widest mb-2">Tema Utama</h2>
-              <p className="text-[#ede5bf] text-xl md:text-2xl font-serif italic font-medium">
+              <p className="text-[#ede5bf] text-base md:text-xl font-serif italic font-medium">
                 "Diponegoro's Spirit: Berdikarya dalam Gerak, Berdampak bagi Bangsa"
               </p>
             </div>

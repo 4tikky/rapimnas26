@@ -108,19 +108,6 @@ export default function Header() {
           
           {/* Wrapper Accordion untuk Pendaftaran */}
           <div className="flex flex-col">
-            <button 
-              onClick={() => setIsMobilePendaftaranOpen(!isMobilePendaftaranOpen)}
-              className={`flex items-center justify-between px-4 py-3.5 rounded-xl transition uppercase text-sm tracking-wider w-full outline-none ${pathname.startsWith('/pendaftaran') && !isMobilePendaftaranOpen ? 'bg-[#b70f3c] text-[#fe7002] font-bold' : 'text-[#ede5bf]/90 font-semibold active:bg-[#b70f3c]/50'}`}
-            >
-              <span>Pendaftaran</span>
-              <svg 
-                className={`w-4 h-4 transition-transform duration-300 ${isMobilePendaftaranOpen ? 'rotate-180 text-[#fe7002]' : ''}`} 
-                fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-
           {/* PERUBAHAN: Pendaftaran di mobile juga menjadi link tunggal biasa */}
           <Link 
             href="/pendaftaran/peserta" 
