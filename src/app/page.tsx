@@ -146,7 +146,7 @@ export default function Home() {
               <Link href="/pendaftaran/peserta" className="bg-[#fe7002] hover:bg-[#fce043] text-[#7d0526] font-bold px-6 py-3.5 rounded-xl shadow-[0_5px_15px_rgba(254,112,2,0.3)] transition-all duration-300">
                 Daftar Peserta/Delegasi
               </Link>
-              <Link href="/pendaftaran/panitia" className="bg-[#3d0212] hover:bg-[#b70f3c] border border-[#b70f3c] text-[#ede5bf] font-medium px-6 py-3.5 rounded-xl transition-all duration-300">
+              <Link href="/pendaftaran/peserta" className="bg-[#3d0212] hover:bg-[#b70f3c] border border-[#b70f3c] text-[#ede5bf] font-medium px-6 py-3.5 rounded-xl transition-all duration-300">
                 Informasi Pendaftaran
               </Link>
             </div>

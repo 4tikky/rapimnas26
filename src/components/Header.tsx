@@ -71,17 +71,9 @@ export default function Header() {
           <Link href="/" className={`transition ${pathname === '/' ? 'text-[#fe7002] font-semibold' : 'text-[#ede5bf]/90 hover:text-[#fe7002]'}`}>Beranda</Link>
           <Link href="/tentang" className={`transition ${pathname === '/tentang' ? 'text-[#fe7002] font-semibold' : 'text-[#ede5bf]/90 hover:text-[#fe7002]'}`}>Tentang</Link>
           <Link href="/jadwal" className={`transition ${pathname === '/jadwal' ? 'text-[#fe7002] font-semibold' : 'text-[#ede5bf]/90 hover:text-[#fe7002]'}`}>Jadwal</Link>
-          
-          <div className="relative group py-2">
-            <button className={`flex items-center gap-1 transition outline-none ${pathname.startsWith('/pendaftaran') ? 'text-[#fe7002] font-semibold' : 'text-[#ede5bf]/90 hover:text-[#fe7002]'}`}>
-              Pendaftaran <span className="text-[10px]">▼</span>
-            </button>
-            {/* PERBAIKAN 2: Menggunakan bg solid (bg-[#b70f3c]) tanpa transparansi, mt-3 agar turun sedikit dari garis, dan z-50 */}
-            <div className="absolute top-full right-0 mt-3 w-52 bg-[#b70f3c] border border-[#ede5bf]/20 shadow-2xl rounded-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 flex flex-col overflow-hidden z-50">
-              <Link href="/pendaftaran/panitia" className={`px-4 py-3 text-sm border-b border-[#ede5bf]/10 transition ${pathname === '/pendaftaran/panitia' ? 'bg-[#7d0526] text-[#fe7002]' : 'text-[#ede5bf] hover:bg-[#7d0526]'}`}>Pendaftaran Panitia</Link>
-              <Link href="/pendaftaran/peserta" className={`px-4 py-3 text-sm transition ${pathname === '/pendaftaran/peserta' ? 'bg-[#7d0526] text-[#fe7002]' : 'text-[#ede5bf] hover:bg-[#7d0526]'}`}>Pendaftaran Peserta</Link>
-            </div>
-          </div>
+          <Link href="/pendaftaran/peserta" className={`transition ${pathname.startsWith('/pendaftaran') ? 'text-[#fe7002] font-semibold' : 'text-[#ede5bf]/90 hover:text-[#fe7002]'}`}>
+            Pendaftaran Peserta
+          </Link>
           <Link href="/arsip" className={`transition ${pathname === '/arsip' ? 'text-[#fe7002] font-semibold' : 'text-[#ede5bf]/90 hover:text-[#fe7002]'}`}>Arsip</Link>
         </nav>
       </div>
@@ -129,25 +121,14 @@ export default function Header() {
               </svg>
             </button>
 
-            {/* Submenu yang muncul saat panah diklik */}
-            {isMobilePendaftaranOpen && (
-              <div className="flex flex-col mt-2 ml-4 border-l-2 border-[#b70f3c] overflow-hidden animate-fade-in">
-                <Link 
-                  href="/pendaftaran/panitia" 
-                  onClick={closeMenu} 
-                  className={`block pl-6 pr-4 py-3 text-sm transition rounded-r-lg ${pathname === '/pendaftaran/panitia' ? 'text-[#fe7002] font-bold bg-[#b70f3c]/50' : 'text-[#ede5bf]/80 active:bg-[#b70f3c]/50'}`}
-                >
-                  Oprec Panitia
-                </Link>
-                <Link 
-                  href="/pendaftaran/peserta" 
-                  onClick={closeMenu} 
-                  className={`block pl-6 pr-4 py-3 text-sm transition rounded-r-lg ${pathname === '/pendaftaran/peserta' ? 'text-[#fe7002] font-bold bg-[#b70f3c]/50' : 'text-[#ede5bf]/80 active:bg-[#b70f3c]/50'}`}
-                >
-                  Pendaftaran Peserta
-                </Link>
-              </div>
-            )}
+          {/* PERUBAHAN: Pendaftaran di mobile juga menjadi link tunggal biasa */}
+          <Link 
+            href="/pendaftaran/peserta" 
+            onClick={closeMenu} 
+            className={`block px-4 py-3.5 rounded-xl transition uppercase text-sm tracking-wider ${pathname.startsWith('/pendaftaran') ? 'bg-[#b70f3c] text-[#fe7002] font-bold' : 'text-[#ede5bf]/90 font-semibold active:bg-[#b70f3c]/50'}`}
+          >
+            Pendaftaran Delegasi
+          </Link>
           </div>
           <Link 
             href="/arsip" 

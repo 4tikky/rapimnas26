@@ -3,99 +3,111 @@
 import { useState } from 'react';
 
 export default function Rundown() {
-  // State untuk menyimpan hari apa yang sedang aktif/diklik (Default: 0 alias Hari 1)
-  const [activeDay, setActiveDay] = useState(0);
-
-  // Data jadwal lengkap tanggal 5-8 November 2026
-  // Silakan ganti teks time, title, dan desc sesuai dengan rundown aslinya nanti
+  // Data Jadwal berdasarkan dokumen "Rancangan Guidebook Rapimnas x FSLDK.docx"
   const scheduleData = [
     {
-      day: "Hari 1",
-      date: "Kamis, 5 Nov 2026",
-      agenda: [
-        { time: "13:00 - 15:00", title: "Kedatangan & Registrasi Peserta", desc: "Delegasi tiba di lokasi penginapan Universitas Diponegoro." },
-        { time: "15:30 - 17:30", title: "Networking & Technical Meeting", desc: "Sesi perkenalan antar delegasi LDK se-Indonesia." },
-        { time: "19:30 - 22:00", title: "Grand Opening RAPIMNAS 1", desc: "Pembukaan resmi, sambutan, dan Keynote Speech." }
+      day: "Hari Pertama",
+      date: "12 November 2026",
+      events: [
+        { time: "Siang - Sore", title: "Kedatangan Peserta", desc: "Penyambutan akbar delegasi LDK dari seluruh Indonesia di Universitas Diponegoro." },
+        { time: "Malam", title: "Malam Keakraban Peserta", desc: "Momen untuk melepas penat, mempererat ukhuwah, dan membangun kedekatan antardelegasi." }
       ]
     },
     {
-      day: "Hari 2",
-      date: "Jumat, 6 Nov 2026",
-      agenda: [
-        { time: "08:00 - 11:30", title: "Sidang Nasional Pleno I", desc: "Pembahasan tata tertib dan pemaparan agenda strategis." },
-        { time: "11:30 - 13:30", title: "ISHOMA & Sholat Jumat", desc: "Istirahat, makan siang, dan ibadah." },
-        { time: "13:30 - 17:30", title: "Sidang Komisi Nasional", desc: "Pembagian kelompok diskusi berdasarkan isu dan wilayah kerja." },
-        { time: "19:30 - 22:00", title: "Lanjutan Sidang Komisi", desc: "Finalisasi hasil diskusi komisi." }
+      day: "Hari Kedua",
+      date: "13 November 2026",
+      events: [
+        { time: "Dini Hari", title: "Tahajud Berjamaah", desc: "Memulai hari dengan ibadah dan munajat bersama." },
+        { time: "Pagi", title: "Grand Opening RAPIMNAS", desc: "Pembukaan resmi rangkaian Rapimnas FSLDK Indonesia 2026." },
+        { time: "Siang", title: "Sidang Pendahuluan & Komisi", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
+        { time: "Sore", title: "Seminar Kepemudaan & Final Lomba", desc: "Ruang inspirasi generasi muda serta ajang Business Case Competition & Desain Poster." },
+        { time: "Malam", title: "Live Podcast: Palestine", desc: "Sesi diskusi inspiratif 'More Than What You See: Mengenal Palestina dari Sisi yang Jarang Kita Ceritakan'." }
       ]
     },
     {
-      day: "Hari 3",
-      date: "Sabtu, 7 Nov 2026",
-      agenda: [
-        { time: "08:00 - 12:00", title: "Kajian & Seminar Nasional", desc: "Menghadirkan pembicara nasional untuk menambah wawasan delegasi." },
-        { time: "13:00 - 15:30", title: "Sidang Paripurna & Pengesahan", desc: "Pembacaan hasil sidang komisi dan ketuk palu pengesahan." },
-        { time: "16:00 - 17:30", title: "Aksi Damai Palestina", desc: "Aksi solidaritas kemanusiaan bersama seluruh delegasi." }
+      day: "Hari Ketiga",
+      date: "14 November 2026",
+      events: [
+        { time: "Pagi", title: "Sidang Komisi (Lanjutan)", desc: "Melanjutkan pembahasan agenda strategis nasional." },
+        { time: "Siang", title: "Tanam Pohon (Semai Asa)", desc: "Aksi nyata kepedulian terhadap lingkungan sebagai bentuk tanggung jawab ekologis." },
+        { time: "Sore", title: "Bedah GD Kaderisasi & Sensus Nasional", desc: "Pemaparan sistem kaderisasi dan sosialisasi program kerja nasional." },
+        { time: "Malam", title: "Pemilihan Tuan Rumah & Penutupan", desc: "Sidang penentuan tuan rumah agenda selanjutnya dan penutupan resmi persidangan." }
       ]
     },
     {
-      day: "Hari 4",
-      date: "Minggu, 8 Nov 2026",
-      agenda: [
-        { time: "07:00 - 11:00", title: "Semarang Heritage Field Trip", desc: "Mengeksplorasi kekayaan budaya dan sejarah di Kota Semarang." },
-        { time: "11:00 - 13:00", title: "Closing Ceremony & Sayonara", desc: "Penutupan acara, pembagian sertifikat, dan kepulangan delegasi." }
+      day: "Hari Keempat",
+      date: "15 November 2026",
+      events: [
+        { time: "Subuh", title: "Gerakan Subuh Jamaah Nasional (GSJN)", desc: "Momentum spiritual menyatukan langkah dalam ibadah salat Subuh berjamaah serentak." },
+        { time: "Pagi - Siang", title: "Semarang Field Trip", desc: "Eksplorasi destinasi sejarah dan budaya di Kota Semarang sekaligus mempererat kebersamaan." }
       ]
     }
   ];
 
+  // State untuk Tab Navigasi Hari
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
-    <section id="rundown" className="max-w-4xl mx-auto px-4 py-16">
+    <div className="max-w-4xl mx-auto px-4">
       
-      {/* Header Jadwal */}
-      <div className="text-center mb-10">
-        <h2 className="text-3xl font-bold text-white">Jadwal Acara</h2>
-        <p className="text-slate-300 mt-2">Rangkaian kegiatan RAPIMNAS 1 dari tanggal 5 - 8 November 2026.</p>
-      </div>
-      
-      {/* Tab Navigasi Hari */}
-      <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
-        {scheduleData.map((tab, index) => (
+      {/* Navigasi Tab Hari */}
+      <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
+        {scheduleData.map((day, index) => (
           <button
             key={index}
-            onClick={() => setActiveDay(index)}
-            className={`px-5 py-3 rounded-xl font-medium transition-all duration-300 border ${
-              activeDay === index 
-                ? 'bg-red-600 text-white border-red-500 shadow-[0_0_15px_rgba(220,38,38,0.5)] scale-105' 
-                : 'bg-white/5 text-slate-300 border-white/10 hover:bg-white/10 hover:text-white'
+            onClick={() => setActiveTab(index)}
+            className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 border ${
+              activeTab === index 
+                ? 'bg-[#fe7002] text-[#7d0526] border-[#fe7002] shadow-[0_0_15px_rgba(254,112,2,0.5)] scale-105' 
+                : 'bg-[#7d0526]/40 text-[#ede5bf]/70 border-[#b70f3c]/40 hover:bg-[#b70f3c]/50 hover:text-[#ede5bf]'
             }`}
           >
-            <div className="text-sm md:text-base">{tab.day}</div>
-            <div className={`text-xs mt-1 ${activeDay === index ? 'text-red-200' : 'text-slate-500'}`}>
-              {tab.date}
-            </div>
+            {day.day}
           </button>
         ))}
       </div>
 
-      {/* Konten Jadwal Sesuai Tab yang Aktif */}
-      <div className="space-y-4 animate-fade-in">
-        {scheduleData[activeDay].agenda.map((item, index) => (
-          <div 
-            key={index} 
-            className="flex flex-col md:flex-row gap-4 md:gap-8 bg-[#1a2340]/60 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:bg-white/10 hover:border-red-500/30 transition-all duration-300 group"
-          >
-            <div className="md:w-48 shrink-0">
-              <span className="text-red-300 font-semibold bg-red-950/50 border border-red-500/30 px-4 py-2 rounded-lg inline-block shadow-inner group-hover:bg-red-900/60 transition-colors">
-                {item.time}
-              </span>
-            </div>
-            <div>
-              <h3 className="text-xl font-bold text-white group-hover:text-red-400 transition-colors">{item.title}</h3>
-              <p className="text-slate-300 mt-2 leading-relaxed">{item.desc}</p>
-            </div>
+      {/* Konten Timeline */}
+      <div className="relative">
+        {/* Garis Vertikal Timeline (Garis Merah) */}
+        <div className="absolute left-4 md:left-8 top-0 bottom-0 w-1 bg-[#b70f3c]/30 rounded-full"></div>
+
+        {/* Render Event Berdasarkan Tab yang Aktif */}
+        <div className="space-y-8 animate-fade-in">
+          
+          {/* Header Tanggal */}
+          <div className="pl-12 md:pl-20">
+            <h3 className="text-2xl font-bold text-[#fce043] mb-6 flex items-center gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+              </svg>
+              {scheduleData[activeTab].date}
+            </h3>
           </div>
-        ))}
+
+          {/* List Kegiatan */}
+          {scheduleData[activeTab].events.map((event, idx) => (
+            <div key={idx} className="relative pl-12 md:pl-20 group">
+              
+              {/* Titik Timeline (Dot) yang beranimasi saat di-hover */}
+              <div className="absolute left-[0.85rem] md:left-[1.85rem] top-1.5 w-4 h-4 bg-[#7d0526] border-2 border-[#fe7002] rounded-full group-hover:bg-[#fe7002] group-hover:scale-150 group-hover:shadow-[0_0_10px_#fe7002] transition-all duration-300 z-10"></div>
+              
+              {/* Kartu Konten */}
+              <div className="bg-[#7d0526]/30 backdrop-blur-md border border-[#b70f3c]/40 p-6 rounded-2xl shadow-lg hover:border-[#fe7002]/50 hover:bg-[#7d0526]/60 hover:-translate-y-1 transition-all duration-300">
+                <span className="inline-block px-3 py-1 bg-[#b70f3c]/40 text-[#fce043] text-xs font-bold rounded-lg mb-3">
+                  {event.time}
+                </span>
+                <h4 className="text-xl font-bold text-[#ede5bf] mb-2">{event.title}</h4>
+                <p className="text-[#ede5bf]/80 text-sm md:text-base leading-relaxed">
+                  {event.desc}
+                </p>
+              </div>
+
+            </div>
+          ))}
+        </div>
       </div>
 
-    </section>
+    </div>
   );
 }
