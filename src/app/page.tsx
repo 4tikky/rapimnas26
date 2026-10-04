@@ -133,15 +133,15 @@ export default function Home() {
           >
             {/* Array untuk mapping foto agar kodenya lebih bersih */}
             {[
-              "/dokumentasi-1.jpg",
-              "/dokumentasi-2.jpg",
-              "/dokumentasi-3.jpg",
-              "/dokumentasi-4.jpg",
-              "/dokumentasi-5.jpg",
-              "/dokumentasi-6.jpg",
-              "/dokumentasi-7.jpg",
-              "/dokumentasi-8.jpg",
-              "/dokumentasi-9.jpg"
+              "/dokumentasi-1.JPG",
+              "/dokumentasi-2.JPG",
+              "/dokumentasi-3.JPG",
+              "/dokumentasi-4.JPG",
+              "/dokumentasi-5.JPG",
+              "/dokumentasi-6.JPG",
+              "/dokumentasi-7.JPG",
+              "/dokumentasi-8.JPG",
+              "/dokumentasi-9.JPG"
             ].map((imgSrc, index) => (
               <div 
                 key={index}
