@@ -3,52 +3,52 @@ import Link from 'next/link';
 export default function ArsipPage() {
   const publicResources = [
     {
-      title: "Logo RAPIMNAS 1 & FSLDK",
-      description: "Unduh logo resmi RAPIMNAS 1 2026 dan logo FSLDK Indonesia format PNG resolusi tinggi (High-Res) untuk keperluan publikasi LDK kampus Anda.",
+      title: "Logo & Maskot RAPIMNAS 1 2026",
+      description: "Unduh logo resmi dan Maskot RAPIMNAS 1 2026 Indonesia format PNG resolusi tinggi.",
       icon: (
         // Warna diubah menjadi Oranye (#fe7002)
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-[#fe7002]">
           <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
         </svg>
       ),
-      link: "#", 
+      link: "https://drive.google.com/drive/folders/14r_q9l9CKuw-4fFvy64rzXUjjHait5r3?usp=sharing", 
       btnText: "Unduh Logo"
     },
+    // {
+    //   title: "Twibbon & Caption Publikasi",
+    //   description: "Mari meriahkan timeline media sosial dengan menggunakan Twibbon resmi RAPIMNAS 1. Sudah termasuk template caption untuk Instagram.",
+    //   icon: (
+    //     // Warna diubah menjadi Kuning (#fce043)
+    //     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-[#fce043]">
+    //       <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+    //     </svg>
+    //   ),
+    //   link: "#", 
+    //   btnText: "Pasang Twibbon"
+    // },
+    // {
+    //   title: "Panduan Lomba Essai Nasional",
+    //   description: "Buku panduan lengkap (syarat, ketentuan, dan timeline) Lomba Essai Nasional dalam rangka menyemarakkan RAPIMNAS 1 FSLDK Indonesia.",
+    //   icon: (
+    //     // Warna diubah menjadi Krem (#ede5bf)
+    //     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-[#ede5bf]">
+    //       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+    //     </svg>
+    //   ),
+    //   link: "#", 
+    //   btnText: "Unduh Panduan"
+    // },
     {
-      title: "Twibbon & Caption Publikasi",
-      description: "Mari meriahkan timeline media sosial dengan menggunakan Twibbon resmi RAPIMNAS 1. Sudah termasuk template caption untuk Instagram.",
-      icon: (
-        // Warna diubah menjadi Kuning (#fce043)
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-[#fce043]">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M7.5 3.75H6A2.25 2.25 0 003.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0120.25 6v1.5m0 9V18A2.25 2.25 0 0118 20.25h-1.5m-9 0H6A2.25 2.25 0 013.75 18v-1.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      ),
-      link: "#", 
-      btnText: "Pasang Twibbon"
-    },
-    {
-      title: "Panduan Lomba Essai Nasional",
-      description: "Buku panduan lengkap (syarat, ketentuan, dan timeline) Lomba Essai Nasional dalam rangka menyemarakkan RAPIMNAS 1 FSLDK Indonesia.",
-      icon: (
-        // Warna diubah menjadi Krem (#ede5bf)
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-[#ede5bf]">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-        </svg>
-      ),
-      link: "#", 
-      btnText: "Unduh Panduan"
-    },
-    {
-      title: "Proposal Sponsorship",
-      description: "Bagi instansi atau perusahaan yang ingin berkolaborasi menyukseskan acara nasional ini, silakan unduh penawaran kerja sama kami.",
+      title: "Proposal Acara",
+      description: "Proposal lengkap untuk acara RAPIMNAS 1 FSLDK Indonesia 2026.",
       icon: (
         // Warna diubah menjadi Merah Terang (#b70f3c)
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8 text-[#b70f3c]">
           <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.97 23.97 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z" />
         </svg>
       ),
-      link: "#", 
-      btnText: "Unduh Proposal"
+      link: "https://docs.google.com/document/d/1x91GD0PbsdjJV3qMh0b5S1lhziZkqcHV/edit", 
+      btnText: "Lihat Proposal"
     }
   ];
 

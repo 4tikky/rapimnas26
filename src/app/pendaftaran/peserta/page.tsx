@@ -49,7 +49,7 @@ export default function PendaftaranPesertaPage() {
                 <div className="space-y-3">
                   <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40">
                     <p className="text-[#ede5bf] font-bold">Batch 1</p>
-                    <p className="text-[#ede5bf]/70 text-sm">1 - 16 Oktober 2026</p>
+                    <p className="text-[#ede5bf]/70 text-sm">5 - 16 Oktober 2026</p>
                   </div>
                   <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40">
                     <p className="text-[#ede5bf] font-bold">Batch 2</p>
@@ -77,8 +77,8 @@ export default function PendaftaranPesertaPage() {
                   </div>
                   <div>
                     <span className="text-[#ede5bf]/80 text-sm block mb-1">Metode Pembayaran:</span>
-                    <span className="text-[#ede5bf] font-semibold block">Transfer ke Rekening Bendahara</span>
-                    <span className="text-[#fe7002] text-xs italic">(Detail rekening terdapat pada Guidebook)</span>
+                    <span className="text-[#ede5bf] font-semibold block">BSI 7278224532</span>
+                    <span className="text-[#fe7002] text-xs italic">a.n. NAURA YAZMI</span>
                   </div>
                 </div>
               </div>
@@ -126,13 +126,13 @@ export default function PendaftaranPesertaPage() {
               <div className="bg-[#b70f3c]/20 p-5 rounded-xl border border-[#b70f3c]/40">
                 <h4 className="text-[#fce043] font-bold mb-3 text-sm uppercase tracking-wider">Narahubung (CP)</h4>
                 <div className="space-y-3">
-                  <a href="https://wa.me/6281284860084" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#ede5bf] hover:text-[#fe7002] transition-colors group">
+                  <a href="https://wa.me/6281328265391" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#ede5bf] hover:text-[#fe7002] transition-colors group">
                     <div className="w-8 h-8 rounded-full bg-[#7d0526] flex items-center justify-center group-hover:scale-110 transition-transform">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4"><path fillRule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clipRule="evenodd" /></svg>
                     </div>
                     <div>
-                      <p className="font-semibold text-sm">Shorim Azmi Abwah</p>
-                      <p className="text-xs opacity-70">0812-8486-0084</p>
+                      <p className="font-semibold text-sm">Davi Arya</p>
+                      <p className="text-xs opacity-70">0813-2826-5391</p>
                     </div>
                   </a>
                   <a href="https://wa.me/6285695543964" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#ede5bf] hover:text-[#fe7002] transition-colors group">

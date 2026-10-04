@@ -9,41 +9,40 @@ export default function Rundown() {
       day: "Hari Pertama",
       date: "Kamis, 12 November 2026",
       events: [
-        { time: "Siang - Sore", title: "Kedatangan Peserta", desc: "Penyambutan akbar delegasi LDK dari seluruh Indonesia di Universitas Diponegoro." },
-        { time: "Malam", title: "Malam Keakraban Peserta", desc: "Momen untuk melepas penat, mempererat ukhuwah, dan membangun kedekatan antardelegasi." }
+        { time: "", title: "Kedatangan Peserta", desc: "Penyambutan akbar delegasi LDK dari seluruh Indonesia di Universitas Diponegoro." },
+        { time: "", title: "Malam Keakraban Peserta", desc: "Momen untuk melepas penat, mempererat ukhuwah, dan membangun kedekatan antardelegasi." }
       ]
     },
     {
       day: "Hari Kedua",
       date: "Jum'at, 13 November 2026",
       events: [
-        { time: "Dini Hari", title: "Tahajud Berjamaah", desc: "Memulai hari dengan ibadah dan munajat bersama." },
-        { time: "08.00 - 11.30 | Gedung Prof. Soedarto Undip", title: "Grand Opening RAPIMNAS", desc: "Pembukaan resmi rangkaian Rapimnas FSLDK Indonesia 2026." },
-        { time: "Siang", title: "Sidang Pendahuluan", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
-        { time: "Siang", title: "Sidang Komisi", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
-        { time: "Sore", title: "Seminar Kepemudaan", desc: "Ruang inspirasi generasi muda serta ajang Business Case Competition & Desain Poster." },
-        { time: "Siang", title: "Final Lomba", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
-        { time: "Malam", title: "Grand Closing UMF x RAPIMNAS", desc: "Sesi diskusi inspiratif 'More Than What You See: Mengenal Palestina dari Sisi yang Jarang Kita Ceritakan'." }
+        { time: "", title: "Tahajud Berjamaah", desc: "Memulai hari dengan ibadah dan munajat bersama." },
+        { time: "08.00 - 11.30 | Hall Gedung Kewirausahaan FEB Undip Lt 4", title: "Grand Opening RAPIMNAS", desc: "Pembukaan resmi rangkaian Rapimnas FSLDK Indonesia 2026." },
+        { time: "13.00 - 21.10 | Aula Gedung Art Center A", title: "Sidang Komisi", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
+        { time: "13.00 - 16.45 | Hall Gedung Kewirausahaan FEB Undip Lt 4", title: "Seminar Kepemudaan", desc: "Ruang inspirasi bagi generasi muda untuk memperluas wawasan, mengasah perspektif, dan membangun semangat kepemimpinan dalam menghadapi tantangan zaman." },
+        { time: "13.00 - 15.00 | Aula FPP Undip", title: "Final Lomba", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
+        { time: "19.00 - 22.00 | Masjid Kampus Undip", title: "Live Podcast × UMF", desc: "Sesi diskusi inspiratif 'More Than What You See: Mengenal Palestina dari Sisi yang Jarang Kita Ceritakan'." }
       ]
     },
     {
       day: "Hari Ketiga",
       date: "Sabtu, 14 November 2026",
       events: [
-        { time: "Pagi", title: "Sidang Komisi (Lanjutan)", desc: "Melanjutkan pembahasan agenda strategis nasional." },
-        { time: "Siang", title: "Eco Movement", desc: "Aksi nyata kepedulian terhadap lingkungan sebagai bentuk tanggung jawab ekologis." },
-        { time: "Siang", title: "Sidang Pemilihan Tuan Rumah RAPIMNAS 2", desc: "Sidang pleno untuk menyatukan hasil pembahasan komisi dan merumuskan keputusan strategis." },
-        { time: "Sore", title: "PMLDK", desc: "Melanjutkan pembahasan agenda strategis nasional." },
-        { time: "Sore", title: "Bedah GD Kaderisasi & Sosialisasi Sensus Nasional", desc: "Pemaparan sistem kaderisasi dan sosialisasi program kerja nasional." },
-        { time: "Malam", title: "Penutupan", desc: "Sidang penentuan tuan rumah agenda selanjutnya dan penutupan resmi persidangan." }
+        { time: "07.00 - 10.30", title: "Eco Movement", desc: "Aksi nyata kepedulian terhadap lingkungan sebagai bentuk tanggung jawab ekologis." },
+        { time: "13.20 - 15.00 | BBPMP Provinsi Jateng", title: "Sidang Komisi (Lanjutan)", desc: "Melanjutkan pembahasan agenda strategis nasional." },
+        { time: "15.30 - 17.45 | BBPMP Provinsi Jateng", title: "Sidang Pemilihan Tuan Rumah RAPIMNAS 2", desc: "Sidang penentuan tuan rumah agenda selanjutnya." },
+        { time: "12.30 - 15.00 | BBPMP Provinsi Jateng", title: "PMLDK", desc: "Sesi pengembangan kapasitas untuk membekali peserta dengan wawasan dan keterampilan dalam mengelola organisasi, membangun tim, serta merancang gerak LDK yang efektif." },
+        { time: "14.40 - 17.15 | BBPMP Provinsi Jateng", title: "Bedah GD Kaderisasi & Sosialisasi Sensus Nasional", desc: "Ruang untuk memetakan kondisi serta arah kaderisasi FSLDK Indonesia secara menyeluruh." },
+        { time: "18.00 - 22.00 | BBPMP Provinsi Jateng", title: "Grand Closing", desc: "Penutup rangkaian Rapimnas 1 FSLDK Indonesia 2026." }
       ]
     },
     {
       day: "Hari Keempat",
       date: "Minggu, 15 November 2026",
       events: [
-        { time: "Subuh", title: "Gerakan Subuh Jamaah Nasional (GSJN)", desc: "Momentum spiritual menyatukan langkah dalam ibadah salat Subuh berjamaah serentak." },
-        { time: "Pagi - Siang", title: "Semarang Field Trip", desc: "Eksplorasi berbagai destinasi di Kota Semarang untuk mengenal kekayaan sejarah, budaya, dan suasana kota sekaligus mempererat kebersamaan antardelgasi." }
+        { time: "04.00 - 06.30 | Masjid Kampus Undip", title: "Gerakan Subuh Jamaah Nasional (GSJN)", desc: "Momentum spiritual menyatukan langkah dalam ibadah salat Subuh berjamaah serentak." },
+        { time: "07.00 - 17.00", title: "Semarang Field Trip", desc: "Eksplorasi berbagai destinasi di Kota Semarang untuk mengenal kekayaan sejarah, budaya, dan suasana kota sekaligus mempererat kebersamaan antardelgasi." }
       ]
     }
   ];
