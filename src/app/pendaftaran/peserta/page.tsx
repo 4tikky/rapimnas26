@@ -8,7 +8,7 @@ export default function PendaftaranPesertaPage() {
   const linkPendaftaranGForm = "https://forms.gle/ContohLinkPendaftaran";
   
   // Masukkan link Google Drive untuk Guidebook Anda di sini
-  const linkGuidebook = "https://drive.google.com/ContohLinkGuidebook";
+  const linkGuidebook = "https://canva.link/guidebookpesertarapimnas26";
 
   return (
     <div className="min-h-screen pt-10 pb-20 bg-[#3d0212]">
@@ -86,7 +86,7 @@ export default function PendaftaranPesertaPage() {
               <div className="bg-[#3d0212]/50 p-6 rounded-2xl border border-[#fe7002]/30 text-center">
                 <h3 className="text-lg font-bold text-[#ede5bf] mb-2">Langkah Pendaftaran:</h3>
                 <p className="text-[#ede5bf]/80 text-sm mb-6">
-                  Pastikan Anda telah mengunduh, membaca, dan menyiapkan berkas sesuai panduan pada Guidebook sebelum menekan tombol daftar.
+                  Pastikan Anda telah membaca dan menyiapkan berkas sesuai panduan pada Guidebook sebelum mendaftar.
                 </p>
 
                 <div className="flex flex-col gap-4">

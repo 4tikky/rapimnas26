@@ -3,6 +3,7 @@
 import { useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import Countdown from '@/components/Countdown';
 
 export default function Home() {
   // Referensi untuk membidik elemen galeri
@@ -62,6 +63,8 @@ export default function Home() {
               Jelajahi Acara
             </Link>
           </div>
+          {/* Hitung Mundur Acara */}
+          <Countdown />
         </div>
       </section>
 
