@@ -67,14 +67,9 @@ export default function PendaftaranPesertaPage() {
                   </svg>
                   Biaya & Pembayaran
                 </h3>
-                <div className="bg-[#b70f3c]/20 p-5 rounded-xl border border-[#b70f3c]/40 space-y-4">
-                  <div className="flex justify-between items-center border-b border-[#b70f3c]/40 pb-3">
-                    <span className="text-[#ede5bf]">Batch 1</span>
-                    <span className="text-[#fce043] font-bold text-lg">Rp 550.000</span>
-                  </div>
-                  <div className="flex justify-between items-center border-b border-[#b70f3c]/40 pb-3">
-                    <span className="text-[#ede5bf]">Batch 2</span>
-                    <span className="text-[#fce043] font-bold text-lg">Rp 550.000</span>
+                <div className="bg-[#b70f3c]/20 p-5 rounded-xl border border-[#b70f3c]/40">
+                  <div className="flex justify-between items-center border-b border-[#b70f3c]/40 pb-4 mb-4">
+                    <span className="text-[#fce043] font-bold text-2xl">Rp 550.000</span>
                   </div>
                   <div>
                     <span className="text-[#ede5bf]/80 text-sm block mb-1">Metode Pembayaran:</span>

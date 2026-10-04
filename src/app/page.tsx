@@ -43,7 +43,7 @@ export default function Home() {
             "Diponegoro's Spirit: Berdikarya dalam Gerak, Berdampak bagi Bangsa"
           </span>
 
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-[#ede5bf] leading-tight max-w-4xl tracking-tight">
+          <h1 className="text-3xl md:text-5xl font-extrabold md:font-black text-white drop-shadow-lg mb-4 leading-snug">
             Rapat Pimpinan Nasional <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#fe7002] to-[#fce043] drop-shadow-md">
               FSLDK INDONESIA 2026
@@ -110,9 +110,6 @@ export default function Home() {
             Kilas Balik RAPIMNAS
             <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-16 h-1.5 bg-[#fe7002] rounded-full"></div>
           </h2>
-          <p className="text-[#ede5bf]/70 mt-6 max-w-2xl mx-auto">
-            Geser untuk melihat momen kebersamaan, lalu klik foto untuk memperbesar tampilan.
-          </p>
         </div>
 
         <div className="relative group">

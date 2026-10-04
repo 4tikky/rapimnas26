@@ -22,14 +22,14 @@ export default function Rundown() {
         { time: "13.00 - 21.10 | Aula Gedung Art Center A", title: "Sidang Komisi", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
         { time: "13.00 - 16.45 | Hall Gedung Kewirausahaan FEB Undip Lt 4", title: "Seminar Kepemudaan", desc: "Ruang inspirasi bagi generasi muda untuk memperluas wawasan, mengasah perspektif, dan membangun semangat kepemimpinan dalam menghadapi tantangan zaman." },
         { time: "13.00 - 15.00 | Aula FPP Undip", title: "Final Lomba", desc: "Awal rangkaian sidang untuk mengevaluasi gerak bersama dan isu strategis." },
-        { time: "19.00 - 22.00 | Masjid Kampus Undip", title: "Live Podcast × UMF", desc: "Sesi diskusi inspiratif 'More Than What You See: Mengenal Palestina dari Sisi yang Jarang Kita Ceritakan'." }
+        { time: "19.00 - 22.00 | Masjid Kampus Undip", title: "Closing UMF", desc: "Sesi diskusi inspiratif 'More Than What You See: Mengenal Palestina dari Sisi yang Jarang Kita Ceritakan'." }
       ]
     },
     {
       day: "Hari Ketiga",
       date: "Sabtu, 14 November 2026",
       events: [
-        { time: "07.00 - 10.30", title: "Eco Movement", desc: "Aksi nyata kepedulian terhadap lingkungan sebagai bentuk tanggung jawab ekologis." },
+        { time: "07.00 - 10.30", title: "Eco Movement x Semai Asa", desc: "Aksi nyata kepedulian terhadap lingkungan sebagai bentuk tanggung jawab ekologis." },
         { time: "13.20 - 15.00 | BBPMP Provinsi Jateng", title: "Sidang Komisi (Lanjutan)", desc: "Melanjutkan pembahasan agenda strategis nasional." },
         { time: "15.30 - 17.45 | BBPMP Provinsi Jateng", title: "Sidang Pemilihan Tuan Rumah RAPIMNAS 2", desc: "Sidang penentuan tuan rumah agenda selanjutnya." },
         { time: "12.30 - 15.00 | BBPMP Provinsi Jateng", title: "PMLDK", desc: "Sesi pengembangan kapasitas untuk membekali peserta dengan wawasan dan keterampilan dalam mengelola organisasi, membangun tim, serta merancang gerak LDK yang efektif." },
