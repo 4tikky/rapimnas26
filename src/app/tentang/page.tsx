@@ -1,14 +1,15 @@
 export default function TentangPage() {
   // Data aktivitas (Rangkaian Kegiatan)
   const activities = [
-    "Sidang Rapimnas (Sidang Pendahuluan, Pleno, Komisi)",
+    "Sidang Rapimnas",
+    "Malam Keakraban",
     "Seminar Kepemudaan",
     "Pelatihan Manajemen LDK (PMLDK)",
-    "Live Podcast × UMF",
+    "Closing UMF",
     "Gerakan Subuh Jamaah Nasional (GSJN)",
-    "Menanam Pohon (Semai Asa)",
+    "Eco Movement x Semai Asa",
     "Business Case Competition & Poster",
-    "Field Trip Semarang & Malam Keakraban"
+    "Field Trip Semarang",
   ];
 
   // Data Tujuan disesuaikan persis dengan dokumen referensi

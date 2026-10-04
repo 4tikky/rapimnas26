@@ -74,7 +74,7 @@ export default function Home() {
               Rapimnas × FSLDK 2026 merupakan forum kerja nasional yang secara khusus diarahkan untuk merumuskan fondasi sistem bagi gerak FSLDK ke depan. Forum ini mempertemukan pimpinan Puskomnas, Puskomda, dan perwakilan Lembaga Dakwah Kampus (LDK) dari seluruh Indonesia untuk menyusun arah gerak bersama.
             </p>
             <Link href="/tentang" className="inline-flex items-center gap-2 text-[#fe7002] font-semibold hover:text-[#fce043] transition-colors group/link">
-              Selengkapnya tentang visi & misi
+              Selengkapnya
               <span className="group-hover/link:translate-x-2 transition-transform duration-300">→</span>
             </Link>
           </div>

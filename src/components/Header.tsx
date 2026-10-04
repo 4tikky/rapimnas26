@@ -47,7 +47,7 @@ export default function Header() {
             />
           </div>
           <div className="hidden md:block font-bold text-lg md:text-xl text-[#ede5bf] tracking-tight">
-            RAPIMNAS FSLDK <span className="text-[#fe7002]">2026</span>
+            RAPIMNAS 1 FSLDK <span className="text-[#fe7002]">2026</span>
           </div>
         </Link>
         
