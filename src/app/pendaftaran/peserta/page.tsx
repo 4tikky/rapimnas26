@@ -49,11 +49,11 @@ export default function PendaftaranPesertaPage() {
                 </h3>
                 <div className="space-y-3">
                   <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40 flex justify-between items-center">
-                    <p className="text-[#ede5bf] font-bold">Batch 1</p>
+                    <p className="text-[#ede5bf] font-bold">Early Bird</p>
                     <p className="text-[#ede5bf]/70 text-sm font-medium">5 - 18 Oktober 2026</p>
                   </div>
                   <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40 flex justify-between items-center">
-                    <p className="text-[#ede5bf] font-bold">Batch 2</p>
+                    <p className="text-[#ede5bf] font-bold">Reguler</p>
                     <p className="text-[#ede5bf]/70 text-sm font-medium">20 - 26 Oktober 2026</p>
                   </div>
                 </div>
@@ -89,11 +89,11 @@ export default function PendaftaranPesertaPage() {
                     <span className="text-[#fe7002] font-bold text-sm uppercase tracking-wide block mb-2">Delegasi Semarang</span>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
-                        <span className="text-[#ede5bf] text-sm">Batch 1</span>
+                        <span className="text-[#ede5bf] text-sm">Early Bird</span>
                         <span className="text-[#fce043] font-bold">Rp 360.000</span>
                       </div>
                       <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
-                        <span className="text-[#ede5bf] text-sm">Batch 2</span>
+                        <span className="text-[#ede5bf] text-sm">Reguler</span>
                         <span className="text-[#fce043] font-bold">Rp 385.000</span>
                       </div>
                     </div>
