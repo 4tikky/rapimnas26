@@ -1,4 +1,3 @@
-import BackToTop from "@/components/BackToTop";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,10 +5,9 @@ import "./globals.css";
 // Import Header dan Footer di sini
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 const inter = Inter({ subsets: ["latin"] });
-
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "RAPIMNAS 1 FSLDK Indonesia 2026",
@@ -32,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id" className="scroll-smooth">
-      <body className="bg-[#3d0212] antialiased">       
+      <body className={`${inter.className} bg-[#3d0212] antialiased`}>       
         {/* Header otomatis ada di semua halaman */}
         <Header />
         
