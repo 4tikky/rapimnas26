@@ -39,7 +39,7 @@ export default function PendaftaranPesertaPage() {
             
             {/* Bagian Kiri: Info Timeline & Biaya */}
             <div className="space-y-8">
-              {/* Timeline Pendaftaran */}
+{/* Timeline Pendaftaran */}
               <div>
                 <h3 className="text-xl font-bold text-[#fce043] mb-4 flex items-center gap-2">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-[#fe7002]">
@@ -48,13 +48,13 @@ export default function PendaftaranPesertaPage() {
                   Timeline Pendaftaran
                 </h3>
                 <div className="space-y-3">
-                  <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40">
+                  <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40 flex justify-between items-center">
                     <p className="text-[#ede5bf] font-bold">Batch 1</p>
-                    <p className="text-[#ede5bf]/70 text-sm">5 - 16 Oktober 2026</p>
+                    <p className="text-[#ede5bf]/70 text-sm font-medium">5 - 18 Oktober 2026</p>
                   </div>
-                  <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40">
+                  <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40 flex justify-between items-center">
                     <p className="text-[#ede5bf] font-bold">Batch 2</p>
-                    <p className="text-[#ede5bf]/70 text-sm">17 - 31 Oktober 2026</p>
+                    <p className="text-[#ede5bf]/70 text-sm font-medium">20 - 26 Oktober 2026</p>
                   </div>
                 </div>
               </div>
@@ -65,17 +65,47 @@ export default function PendaftaranPesertaPage() {
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6 text-[#fe7002]">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" />
                   </svg>
-                  Biaya & Pembayaran
+                  HTM Peserta
                 </h3>
-                <div className="bg-[#b70f3c]/20 p-5 rounded-xl border border-[#b70f3c]/40">
-                  <div className="flex justify-between items-center border-b border-[#b70f3c]/40 pb-4 mb-4">
-                    <span className="text-[#fce043] font-bold text-2xl">Rp 550.000</span>
-                  </div>
+                <div className="bg-[#b70f3c]/20 p-5 rounded-xl border border-[#b70f3c]/40 space-y-5">
+                  
+                  {/* Kategori Non-Semarang */}
                   <div>
-                    <span className="text-[#ede5bf]/80 text-sm block mb-1">Metode Pembayaran:</span>
-                    <span className="text-[#ede5bf] font-semibold block">BSI 7278224532</span>
+                    <span className="text-[#fe7002] font-bold text-sm uppercase tracking-wide block mb-2">Delegasi Non-Semarang</span>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
+                        <span className="text-[#ede5bf] text-sm">Batch 1</span>
+                        <span className="text-[#fce043] font-bold">Rp 450.000</span>
+                      </div>
+                      <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
+                        <span className="text-[#ede5bf] text-sm">Batch 2</span>
+                        <span className="text-[#fce043] font-bold">Rp 465.000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Kategori Semarang */}
+                  <div>
+                    <span className="text-[#fe7002] font-bold text-sm uppercase tracking-wide block mb-2">Delegasi Semarang</span>
+                    <div className="space-y-2">
+                      <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
+                        <span className="text-[#ede5bf] text-sm">Batch 1</span>
+                        <span className="text-[#fce043] font-bold">Rp 370.000</span>
+                      </div>
+                      <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
+                        <span className="text-[#ede5bf] text-sm">Batch 2</span>
+                        <span className="text-[#fce043] font-bold">Rp 385.000</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Info Rekening */}
+                  <div className="pt-3 border-t border-[#b70f3c]/40">
+                    <span className="text-[#ede5bf]/80 text-xs block mb-1">Metode Pembayaran:</span>
+                    <span className="text-[#ede5bf] font-semibold text-sm block">BSI 7278224532</span>
                     <span className="text-[#fe7002] text-xs italic">a.n. NAURA YAZMI</span>
                   </div>
+                  
                 </div>
               </div>
             </div>
