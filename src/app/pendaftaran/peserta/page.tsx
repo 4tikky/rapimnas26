@@ -74,11 +74,11 @@ export default function PendaftaranPesertaPage() {
                     <span className="text-[#fe7002] font-bold text-sm uppercase tracking-wide block mb-2">Delegasi Non-Semarang</span>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
-                        <span className="text-[#ede5bf] text-sm">Batch 1</span>
+                        <span className="text-[#ede5bf] text-sm">Early Bird</span>
                         <span className="text-[#fce043] font-bold">Rp 450.000</span>
                       </div>
                       <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
-                        <span className="text-[#ede5bf] text-sm">Batch 2</span>
+                        <span className="text-[#ede5bf] text-sm">Reguler</span>
                         <span className="text-[#fce043] font-bold">Rp 500.000</span>
                       </div>
                     </div>
