@@ -8,7 +8,7 @@ export default function PendaftaranPesertaPage() {
   const linkPendaftaranGForm = "https://bit.ly/PendaftaranPesertaRapimnas26";
   
   // Masukkan link Google Drive untuk Guidebook Anda di sini
-  const linkGuidebook = "https://canva.link/guidebookpesertarapimnas26";
+  const linkGuidebook = "https://canva.link/akvmw3lihntwuwo";
 
   return (
     <div className="min-h-screen pt-10 pb-20 bg-[#3d0212]">
