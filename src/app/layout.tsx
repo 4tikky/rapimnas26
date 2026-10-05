@@ -9,9 +9,20 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "Rapimnas FSLDK 2026",
-  description: "Website Resmi Rapat Pimpinan Nasional FSLDK 2026",
+  title: "RAPIMNAS 1 FSLDK Indonesia 2026",
+  description: "Website resmi Rapat Pimpinan Nasional 1 FSLDK Indonesia 2026 yang diselenggarakan di Universitas Diponegoro, Semarang. Dapatkan informasi jadwal, panduan, dan pendaftaran delegasi.",
+  keywords: ["Rapimnas FSLDK 2026", "FSLDK Indonesia", "LDK Semarang", "Universitas Diponegoro", "Delegasi LDK"],
+  openGraph: {
+    title: "RAPIMNAS 1 FSLDK Indonesia 2026",
+    description: "Website resmi Rapat Pimpinan Nasional 1 FSLDK Indonesia 2026 di Universitas Diponegoro, Semarang.",
+    url: "https://rapimnas26.vercel.app",
+    siteName: "RAPIMNAS FSLDK 2026",
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
