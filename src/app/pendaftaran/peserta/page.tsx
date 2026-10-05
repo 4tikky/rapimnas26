@@ -79,7 +79,7 @@ export default function PendaftaranPesertaPage() {
                       </div>
                       <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
                         <span className="text-[#ede5bf] text-sm">Batch 2</span>
-                        <span className="text-[#fce043] font-bold">Rp 465.000</span>
+                        <span className="text-[#fce043] font-bold">Rp 500.000</span>
                       </div>
                     </div>
                   </div>
@@ -90,7 +90,7 @@ export default function PendaftaranPesertaPage() {
                     <div className="space-y-2">
                       <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
                         <span className="text-[#ede5bf] text-sm">Batch 1</span>
-                        <span className="text-[#fce043] font-bold">Rp 370.000</span>
+                        <span className="text-[#fce043] font-bold">Rp 360.000</span>
                       </div>
                       <div className="flex justify-between items-center bg-black/10 px-3 py-2 rounded-lg">
                         <span className="text-[#ede5bf] text-sm">Batch 2</span>
