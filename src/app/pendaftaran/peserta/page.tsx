@@ -5,7 +5,7 @@ import PickupLocation from '@/components/PickupLocation';
 export default function PendaftaranPesertaPage() {
   
   // Masukkan link Google Form pendaftaran Anda di sini
-  const linkPendaftaranGForm = "https://bit.ly/PendaftaranPesertaRapimnas26";
+  const linkPendaftaranGForm = "https://bit.ly/OpregPesertaRapimnas2026";
   
   // Masukkan link Google Drive untuk Guidebook Anda di sini
   const linkGuidebook = "https://canva.link/akvmw3lihntwuwo";
@@ -50,11 +50,11 @@ export default function PendaftaranPesertaPage() {
                 <div className="space-y-3">
                   <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40 flex justify-between items-center">
                     <p className="text-[#ede5bf] font-bold">Early Bird</p>
-                    <p className="text-[#ede5bf]/70 text-sm font-medium">5 - 18 Oktober 2026</p>
+                    <p className="text-[#ede5bf]/70 text-sm font-medium">6 - 13 Oktober 2026</p>
                   </div>
                   <div className="bg-[#b70f3c]/20 p-4 rounded-xl border border-[#b70f3c]/40 flex justify-between items-center">
                     <p className="text-[#ede5bf] font-bold">Reguler</p>
-                    <p className="text-[#ede5bf]/70 text-sm font-medium">20 - 26 Oktober 2026</p>
+                    <p className="text-[#ede5bf]/70 text-sm font-medium">15 - 26 Oktober 2026</p>
                   </div>
                 </div>
               </div>
